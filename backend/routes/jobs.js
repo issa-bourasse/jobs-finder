@@ -2,7 +2,8 @@ const express = require('express');
 const job = require('../models/job');
 
 const API_URL = 'https://serpapi.com/search.json?engine=google_jobs';
-const API_KEY = process.env.SERPAPI_KEY || '3fd09fb8308d2da7611137727de6ff211f7091d388c7d7794af4ee3907b4acdb'
+// Set SERPAPI_KEY in your .env file. Never commit the real key.
+const API_KEY = process.env.SERPAPI_KEY;
 
 const router = express.Router();
 
